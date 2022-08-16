@@ -10,6 +10,7 @@ $user = new User("Joko", "joko@gmail.com");
 var_dump($user);
 
 $dokter = new Dokter("Joko", "dokter@gmail.com", "D600");
+$dokter->addSpesialisasi("Dokter Anak");
 
 ?>
 
@@ -25,5 +26,6 @@ $dokter = new Dokter("Joko", "dokter@gmail.com", "D600");
     Username : <?php echo $dokter->username ?> <br>
     Email : <?php echo $dokter->email ?> <br>
     No. Reg : <?php echo $dokter->no_reg ?> <br>
+    Spesialisasi : <?php echo $dokter->getSpesialisasi() ?> <br>
 </body>
 </html>
